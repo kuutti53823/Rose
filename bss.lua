@@ -6,9 +6,9 @@ getgenv().ExploitSpecific = "📜"
 
 -- API CALLS
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NormalRandomDude/RosePog/main/library.lua"))()
-getgenv().api = loadstring(game:HttpGet("https://raw.githubusercontent.com/NormalRandomDude/RosePog/main/api.lua"))()
-local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/NormalRandomDude/RosePog/main/bssapi.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/kuutti53823/Rose/main/library.lua"))()
+getgenv().api = loadstring(game:HttpGet("https://raw.githubusercontent.com/kuutti53823/Rose/main/api.lua"))()
+local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/kuutti53823/Rose/main/bssapi.lua"))()
 local httpreq = (syn and syn.request) or http_request or (http and http.request) or request
 
 if not isfolder("kocmoc") then makefolder("kocmoc") end
@@ -25,7 +25,7 @@ if isfile("rosemoc.txt") == false then
         },
         Body = game:GetService("HttpService"):JSONEncode({
             cmd = "INVITE_BROWSER",
-            args = {code = "BeF364YJS5"},
+            args = {code = ""},
             nonce = game:GetService("HttpService"):GenerateGUID(false)
         }),
         writefile("rosemoc.txt", "discord")
@@ -2415,7 +2415,7 @@ guiElements["toggles"]["autoant"] = autoanttoggle
 
 local serverhopkill = combtab:CreateSection("Serverhopping Combat")
 serverhopkill:CreateButton("Vicious Bee Serverhopper ["..Danger.."]["..ExploitSpecific.."]", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NormalRandomDude/RosePog/main/viciousbeeserverhop.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/kuutti53823/Rose/main/viciousbeeserverhop.lua"))()
 end):AddToolTip("Serverhops for rouge vicious bees")
 serverhopkill:CreateLabel("")
 serverhopkill:CreateLabel("["..Danger.."] These functions will unload the UI")
